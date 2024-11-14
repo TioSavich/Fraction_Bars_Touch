@@ -1,0 +1,148 @@
+/* fractionBars.css */
+
+/* General Styles */
+body, p, td {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+#labelInput {
+    display: none;
+}
+
+#fbCanvas {
+    background-color: #EFEFEF;
+    border: 1px solid gray;
+}
+
+#tools {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+
+#tools .toolGroup {
+    margin-bottom: 12px;
+}
+
+#tools .toolGroup a {
+    border: 1px solid #999999;
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 4px;
+    padding: 2px;
+    background-color: #f0f0f0;
+}
+
+#tools .toolGroup a.colorBlock,
+#tools .toolGroup a.colorBlock1 {
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 3px 3px 4px 4px;
+}
+
+#tools .toolGroup a.hideShow {
+    width: 35px;
+}
+
+#tools .toolGroup a.colorSelected,
+#tools .toolGroup a.toolSelected {
+    border: 2px solid black;
+}
+
+#tools .toolGroup a.toolSelected {
+    background-color: #EEEEEE;
+}
+
+/* Color Blocks */
+.color1 { background-color: #A8FFF4; }
+.color2 { background-color: #DDFFF0; }
+.color3 { background-color: #ACBEFF; }
+.color4 { background-color: #707EFF; }
+.color5 { background-color: #FFFFFF; }
+.color6 { background-color: #EFEFEF; }
+.color7 { background-color: #E6E6E6; }
+.color8 { background-color: #D6D6D6; }
+.color9 { background-color: #FFCC66; }
+.color10 { background-color: #FFFF66; }
+.color11 { background-color: #E9FF66; }
+.color12 { background-color: #CCFF66; }
+.color13 { background-color: #DD99FF; }
+.color14 { background-color: #FF92DA; }
+.color15 { background-color: #F56ED0; }
+.color16 { background-color: #FF8C8C; }
+
+/* Split Display */
+#split-display {
+    float: right;
+    background-color: #EFEFEF;
+    border: 1px solid gray;
+}
+
+#split-slider {
+    width: 250px;
+}
+
+.radio_vert_horz, .radio_itterate_vert_horz, .radio_split_p {
+    margin-top: 10px;
+}
+
+#radio_whole {
+    margin-top: 10px;
+}
+
+#tools2 .toolGroup {
+    text-align: center;
+}
+
+#tools2 .toolGroup a.colorBlock1 {
+    width: 15px;
+    height: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #tools {
+        width: 80px;
+    }
+
+    #tools .toolGroup a {
+        width: 70px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .colorBlock, .colorBlock1 {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* Dialog Styles */
+.ui-dialog-titlebar-close {
+    display: none;
+}
