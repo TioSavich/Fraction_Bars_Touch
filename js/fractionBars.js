@@ -1786,4 +1786,3 @@ function showSelectList() {
         selectElement.appendChild(option);
     });
 }
-)
